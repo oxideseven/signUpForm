@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-Up Form</title>
+        <meta charset="utf-8">
+        <link href="./style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src = "./script.js" defer></script>
+    </head>
+    <body>
+        
+        <header></header>
+
+        <main>
+            <div class="leftSide">
+                <div class="logoText">
+                    <img src="./images/bulb-outline.svg" alt="a lightbulb logo" id="logo">
+                    <h1>Pango!</h1>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="upperText">
+                    <p>This isn't a real service!</p>
+                    <p>Don't you wanna be as cool as Pango over there? Don't you want to make Pango proud?</p>
+                    <p>Don't you want to feel satisfied, and find your true meaning?</p>
+                    <p>Of course you do! Sign up down here and Pango will grace you with wisdom.</p>
+                </div>
+
+                <form action="/non-existant-form-handler" method="post">
+                    <ul>
+                        <li>
+                            <label for="fName">First Name</label>
+                            <input type="text" id="fName" name="user_fName" required>
+                        </li>
+                        <li>
+                            <label for="lName">Last Name</label>
+                            <input type="text" id="lName" name="user_lName" required>
+                        </li>
+                        <li>
+                            <label for="email">eMail</label>
+                            <input type="email" id="mail" name="user_email" required>
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="user_phone" required>
+                        </li>
+                        <li>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="user_pw" required>
+                        </li>
+                        <li>
+                            <label for="passwordConf">Confirm Password</label>
+                            <input type="password" id="passwordConf" name="user_pwConf" required>
+                        </li>
+                    </ul>
+                    <p>
+                        <button type="submit">Gimme that sweet sweet account!</button>
+                    </p>
+                </form>
+
+                <p>Already have an account? <a href="/non-existent-login-page">Log In</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Copyright ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                <p>oxideSeven</p>
+                <a href="https://github.com/oxideseven" target="_blank">
+                <ion-icon class="ion-github" name="logo-github"></ion-icon>
+            </p>
+        </footer>
+    </body>
+</html>
