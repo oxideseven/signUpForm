@@ -63,15 +63,17 @@ main {
 }
 
 .logoText {
+	display: flex;
     height: auto;
     background-color: rgba(0, 0, 0, 0.7);
     position: relative;
     top: 20vh;
     gap: 1vw;
     padding: 15px 0;
-
     justify-content: center;
     align-items: center;
+	font-size: 3.2rem;
+	font-family: Indie Flower;
 }
 
 #logo {
@@ -83,7 +85,79 @@ main {
 .rightSide {
     display: flex;
     flex-direction: column;
-    
+	justify-content: center;
+	padding: 0px 16px;
+}
+
+.upperText {
+	margin-bottom: 128px;
+}
+
+.formTitle{
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 0px 15px 10px -10px #0d0d0d;
+	list-style-type: none;
+	padding: 16px 0px;
+	gap: 16px;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	font-size: 1.2rem;
+}
+
+input {
+	padding: 0px 6px;
+	height: 24px;
+	width: 100%;
+	background-color: var(--dark1);
+	border-radius: 2px;
+	border: 1px solid var(--dark1L);
+	color: var(--light1);
+}
+
+input:focus{
+	outline: none;
+	border: 1px solid var(--aem-green);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  box-shadow: inset 0 -3px 0 0px rgb(182, 68, 68);
+} 
+
+button {
+	margin: 32px 16px 16px 16px;
+	border-radius: 6px;
+	border-color: var(--aem-green);
+	padding: 16px;
+	font-size: 2rem;
+	color: var(--aem-green);
+	background-color: var(--dark1);
+}
+
+button:hover {
+	color: var(--dark1);
+	background-color: var(--aem-green);
+}
+
+.existingAccount {
+	margin-left: 32px;
+}
+a {
+	font-weight: bold;
+	color: var(--aem-green);
+}
+
+a:hover {
+	color: var(--light1);
 }
 
 
